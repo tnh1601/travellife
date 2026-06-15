@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Thanh toán tour</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="xacnhanthanhtoan.css">
+</head>
+<body>
+
+<div class="container py-5">
+
+    <div class="payment-box">
+
+        <!-- BÊN TRÁI -->
+        <div class="left-side">
+
+            <button class="btn-back" href="./tkewed buoi9.html">
+                ← Quay lại
+            </button>
+
+            <div class="overlay-content">
+                <h1>Thanh toán tour</h1>
+
+                <p>
+                    Hoàn tất thanh toán để xác nhận chỗ và nhận vé điện tử.
+                </p>
+            </div>
+
+        </div>
+
+        <!-- BÊN PHẢI -->
+        <div class="right-side">
+
+            <h2 class="mb-4 fw-bold">
+                Thông tin thanh toán
+            </h2>
+
+            <!-- THÔNG TIN TOUR -->
+            <div class="order-card">
+
+                <h5>Tour Đà Nẵng 3N2Đ</h5>
+
+                <div class="d-flex justify-content-between">
+                    <span>Số người:</span>
+                    <strong>2</strong>
+                </div>
+
+                <div class="d-flex justify-content-between">
+                    <span>Ngày đi:</span>
+                    <strong>20/08/2026</strong>
+                </div>
+
+                <hr>
+
+                <div class="d-flex justify-content-between">
+                    <span>Tổng tiền:</span>
+                    <strong class="text-primary">
+                        4.500.000 VNĐ
+                    </strong>
+                </div>
+
+            </div>
+
+            <!-- THÔNG TIN KHÁCH -->
+            <div class="mb-3">
+                <label class="form-label">
+                    Email
+                </label>
+
+                <input
+                    type="email"
+                    class="form-control"
+                    placeholder="example@gmail.com">
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">
+                    Số điện thoại
+                </label>
+
+                <input
+                    type="text"
+                    class="form-control"
+                    placeholder="090xxxxxxx">
+            </div>
+
+            <!-- PHƯƠNG THỨC -->
+            <label class="form-label fw-bold">
+                Phương thức thanh toán
+            </label>
+
+            <div class="payment-method">
+
+                <div class="form-check">
+                    <input class="form-check-input"
+                    type="radio"
+                    name="payment"
+                    checked>
+
+                    <label class="form-check-label">
+                        Ví MoMo
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input"
+                    type="radio"
+                    name="payment">
+
+                    <label class="form-check-label">
+                        VNPay
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input"
+                    type="radio"
+                    name="payment">
+
+                    <label class="form-check-label">
+                        Thẻ ngân hàng
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input"
+                    type="radio"
+                    name="payment">
+
+                    <label class="form-check-label">
+                        Thanh toán tại quầy
+                    </label>
+                </div>
+
+            </div>
+
+            <button
+            class="btn btn-primary btn-lg w-100 mt-4"
+            onclick="paymentSuccess()">
+
+                Xác nhận thanh toán
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="xntt.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TravelLife – Tất cả Tour</title>
+  <link rel="stylesheet" href="tatcatour.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- BOX 1: HEADER -->
+  <div class="header">
+    <div class="logo">Travel<span>Life</span></div>
+
+    <div class="header-search">
+      <input type="text" id="searchInput" placeholder="Tìm kiếm điểm đến, tour du lịch..." oninput="filterTours()">
+      <button onclick="filterTours()">🔍 Tìm</button>
+    </div>
+
+    <div class="account-menu">
+      <button id="accountBtn" class="account-btn" onclick="toggleMenu()">
+        <i class="fa-solid fa-user"></i> Tài khoản ▼
+      </button>
+      <div id="menu" class="account-dropdown">
+        <a href="dangnhap.html">Đăng nhập</a>
+        <a href="dangki.html">Đăng ký</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- BỐ CỤC 3 CỘT -->
+  <div id="main_content">
+
+    <!-- LEFT SIDEBAR -->
+    <div id="left_sidebar">
+      <div class="sidebar-title">📂 Danh mục tour</div>
+
+      <a href="dulichbien.html" class="sidebar-menu-item">
+        <span class="sm-icon">🌊</span> Du lịch biển <span class="sm-count">120</span>
+      </a>
+      <a href="nuirung.html" class="sidebar-menu-item">
+        <span class="sm-icon">🏔️</span> Núi &amp; rừng <span class="sm-count">92</span>
+      </a>
+      <a href="phoco.html" class="sidebar-menu-item">
+        <span class="sm-icon">🏙️</span> Phố cổ <span class="sm-count">78</span>
+      </a>
+      <a href="disan.html" class="sidebar-menu-item">
+        <span class="sm-icon">🛕</span> Di sản <span class="sm-count">55</span>
+      </a>
+      <a href="vuichoi.html" class="sidebar-menu-item">
+        <span class="sm-icon">🎡</span> Vui chơi <span class="sm-count">43</span>
+      </a>
+      <a href="maohiem.html" class="sidebar-menu-item">
+        <span class="sm-icon">🚴</span> Mạo hiểm <span class="sm-count">36</span>
+      </a>
+      <a href="amthuc.html" class="sidebar-menu-item">
+        <span class="sm-icon">🍜</span> Ẩm thực <span class="sm-count">29</span>
+      </a>
+      <a href="honeymoon.html" class="sidebar-menu-item">
+        <span class="sm-icon">💑</span> Honeymoon <span class="sm-count">24</span>
+      </a>
+      <a href="giadinh.html" class="sidebar-menu-item">
+        <span class="sm-icon">👨‍👩‍👧</span> Gia đình <span class="sm-count">61</span>
+      </a>
+      <a href="nuocngoai.html" class="sidebar-menu-item">
+        <span class="sm-icon">✈️</span> Nước ngoài <span class="sm-count">88</span>
+      </a>
+    </div>
+
+    <!-- NỘI DUNG CHÍNH -->
+    <div id="content">
+
+      <!-- BOX 2: NAVBAR -->
+      <div class="navbar">
+        <a href="tatcatour.html" class="active">Tất cả tour</a>
+        <a href="tourtrongnuoc.html">Tour trong nước</a>
+        <a href="tournuocngoai.html">Tour nước ngoài</a>
+        <a href="nghiduong.html">Nghỉ dưỡng</a>
+        <a href="maohiem.html">Mạo hiểm</a>
+        <a href="khuyenmai.html">Khuyến mãi</a>
+        <a href="lienhe.html">Liên hệ</a>
+      </div>
+
+      <!-- NỘI DUNG -->
+      <div class="wrap">
+
+        <div class="result-bar">
+          <span id="resultCount">Đang tải...</span>
+          <select class="sort-select" onchange="sortTours(this.value)">
+            <option value="default">Sắp xếp: Mặc định</option>
+            <option value="price-asc">Giá: Thấp → Cao</option>
+            <option value="price-desc">Giá: Cao → Thấp</option>
+            <option value="discount">Giảm giá nhiều nhất</option>
+          </select>
+        </div>
+
+        <div class="tour-grid" id="tourGrid"></div>
+
+        <div class="no-result" id="noResult">
+          <div class="icon">🔍</div>
+          <p>Không tìm thấy tour phù hợp.</p>
+        </div>
+
+        <div class="pagination" id="pagination"></div>
+
+      </div><!-- /.wrap -->
+    </div><!-- /#content -->
+  </div><!-- /#main_content -->
+
+  <div id="toast"></div>
+
+  <script src="tatcatour.js"></script>
+</body>
+</html>

@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Travel Life — Du Lịch Biển Việt Nam</title>
+<link href="styletkweb.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a class="nav-logo" href="#">Travel <span>Life</span></a>
+  <ul class="nav-links">
+    <li><a href="#destinations">Điểm đến</a></li>
+    <li><a href="#experiences">Trải nghiệm</a></li>
+    <li><a href="#tours">Tour</a></li>
+    <li><a href="#about">Về chúng tôi</a></li>
+  </ul>
+  <a href="./dattourngay.html" class="btn" 
+  class="nav-cta"><button>Đặt ngay</button></a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-content">
+    <div class="hero-eyebrow">Khám phá thiên đường biển</div>
+    <h1 class="hero-title">
+      Hòa mình vào<br>
+      <em>Biển Xanh Vô Tận</em>
+    </h1>
+    <p class="hero-sub">Từ bãi cát trắng Phú Quốc đến vịnh Hạ Long huyền ảo — chúng tôi mang đến những hành trình biển đẹp nhất Việt Nam.</p>
+    <div class="hero-actions">
+      <a href="#tours" class="btn-primary">Khám phá tour</a>
+      <a href="#destinations" class="btn-ghost">Xem điểm đến</a>
+    </div>
+  </div>
+  <div class="hero-stats">
+    <div class="stat">
+      <div class="stat-num">120+</div>
+      <div class="stat-label">Điểm đến</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">40K</div>
+      <div class="stat-label">Khách hàng</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">15</div>
+      <div class="stat-label">Năm kinh nghiệm</div>
+    </div>
+  </div>
+  <svg class="hero-waves" viewBox="0 0 1440 80" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+    <path d="M0,40 C240,80 480,0 720,40 C960,80 1200,0 1440,40 L1440,80 L0,80 Z" fill="#fdfcf9"/>
+  </svg>
+</section>
+
+<!-- SEARCH -->
+<section class="search-section">
+  <div class="search-card">
+    <div class="search-field">
+      <label>Điểm đến</label>
+      <input type="text" placeholder="Vd: Phú Quốc, Đà Nẵng…">
+    </div>
+    <div class="search-field">
+      <label>Ngày đi</label>
+      <input type="date">
+    </div>
+    <div class="search-field">
+      <label>Loại tour</label>
+      <select>
+        <option>Tất cả</option>
+        <option>Nghỉ dưỡng</option>
+        <option>Lặn biển</option>
+        <option>Khám phá đảo</option>
+        <option>Gia đình</option>
+      </select>
+    </div>
+    <button class="btn-search">Tìm kiếm</button>
+  </div>
+</section>
+
+<!-- DESTINATIONS -->
+<section class="section" id="destinations" style="padding-top: 5rem;">
+  <div class="section-header">
+    <div class="section-eyebrow">Điểm đến nổi bật</div>
+    <h2 class="section-title">Những bãi biển <em>đẹp nhất</em></h2>
+    <p class="section-desc">Từ Bắc tới Nam, Việt Nam sở hữu hàng trăm km bờ biển tuyệt đẹp đang chờ bạn khám phá.</p>
+  </div>
+  <div class="destinations-grid">
+    <div class="dest-card">
+      <img src="https://images.unsplash.com/photo-1559592413-7cec4d0cae2b?w=800&q=80" alt="Phú Quốc">
+      <div class="dest-overlay"></div>
+      <div class="dest-info">
+        <span class="dest-tag">Phổ biến nhất</span>
+        <div class="dest-name">Phú Quốc</div>
+        <div class="dest-meta">Kiên Giang · 48 tour đang mở</div>
+      </div>
+    </div>
+    <div class="dest-card">
+      <img src="https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=600&q=80" alt="Đà Nẵng">
+      <div class="dest-overlay"></div>
+      <div class="dest-info">
+        <div class="dest-name">Đà Nẵng</div>
+        <div class="dest-meta">32 tour</div>
+      </div>
+    </div>
+    <div class="dest-card">
+      <img src="https://images.unsplash.com/photo-1573166364524-d9dbfd8bbf83?w=600&q=80" alt="Nha Trang">
+      <div class="dest-overlay"></div>
+      <div class="dest-info">
+        <div class="dest-name">Nha Trang</div>
+        <div class="dest-meta">27 tour</div>
+      </div>
+    </div>
+    <div class="dest-card">
+      <img src="https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=600&q=80" alt="Vịnh Hạ Long">
+      <div class="dest-overlay"></div>
+      <div class="dest-info">
+        <span class="dest-tag">Di sản UNESCO</span>
+        <div class="dest-name">Hạ Long</div>
+        <div class="dest-meta">21 tour</div>
+      </div>
+    </div>
+    <div class="dest-card">
+      <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80" alt="Mũi Né">
+      <div class="dest-overlay"></div>
+      <div class="dest-info">
+        <div class="dest-name">Mũi Né</div>
+        <div class="dest-meta">15 tour</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCES -->
+<section class="section experiences" id="experiences">
+  <div class="section-header">
+    <div class="section-eyebrow">Trải nghiệm độc đáo</div>
+    <h2 class="section-title">Làm gì khi <em>ra biển?</em></h2>
+  </div>
+  <div class="exp-grid">
+    <div class="exp-card">
+      <div class="exp-icon">🤿</div>
+      <div class="exp-title">Lặn biển</div>
+      <p class="exp-desc">Khám phá rạn san hô đầy màu sắc cùng hướng dẫn viên chuyên nghiệp tại Phú Quốc & Nha Trang.</p>
+    </div>
+    <div class="exp-card">
+      <div class="exp-icon">🚤</div>
+      <div class="exp-title">Du thuyền đảo</div>
+      <p class="exp-desc">Lênh đênh trên mặt biển xanh, ghé thăm những hòn đảo hoang sơ và ngắm hoàng hôn tuyệt đẹp.</p>
+    </div>
+    <div class="exp-card">
+      <div class="exp-icon">🏄</div>
+      <div class="exp-title">Lướt sóng</div>
+      <p class="exp-desc">Thử thách bản thân với môn lướt ván tại Mũi Né — thiên đường của dân chơi thể thao biển.</p>
+    </div>
+    <div class="exp-card">
+      <div class="exp-icon">🌅</div>
+      <div class="exp-title">Nghỉ dưỡng biển</div>
+      <p class="exp-desc">Thư giãn tại những khu resort sang trọng ngay sát mép nước với view biển tuyệt hảo.</p>
+    </div>
+  </div>
+</section>
+
+<!-- TOURS -->
+<section class="section" id="tours">
+  <div class="section-header">
+    <div class="section-eyebrow">Tour nổi bật</div>
+    <h2 class="section-title">Hành trình <em>được yêu thích</em></h2>
+    <p class="section-desc">Được thiết kế và tuyển chọn kỹ lưỡng, mỗi tour là một hành trình đáng nhớ.</p>
+  </div>
+  <div class="tours-grid">
+    <div class="tour-card">
+      <div class="tour-img">
+        <img src="https://images.unsplash.com/photo-1559592413-7cec4d0cae2b?w=600&q=80" alt="Phú Quốc">
+        <span class="tour-badge">Bestseller</span>
+      </div>
+      <div class="tour-body">
+        <div class="tour-location">📍 Phú Quốc · Kiên Giang</div>
+        <div class="tour-name">Phú Quốc — Đảo Ngọc 4 ngày 3 đêm</div>
+        <div class="tour-details">
+          <span>📅 4N3Đ</span>
+          <span>👥 2–20 người</span>
+          <span>⭐ 4.9 (312)</span>
+        </div>
+        <div class="tour-footer">
+          <div>
+            <div class="tour-price-label">Từ</div>
+            <div class="tour-price">4.500.000 <sub>đ/người</sub></div>
+          </div>
+          <a href="#" class="btn-tour">Đặt ngay</a>
+        </div>
+      </div>
+    </div>
+    <div class="tour-card">
+      <div class="tour-img">
+        <img src="https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=600&q=80" alt="Hạ Long">
+        <span class="tour-badge">UNESCO</span>
+      </div>
+      <div class="tour-body">
+        <div class="tour-location">📍 Hạ Long · Quảng Ninh</div>
+        <div class="tour-name">Vịnh Hạ Long — Du thuyền 2 ngày 1 đêm</div>
+        <div class="tour-details">
+          <span>📅 2N1Đ</span>
+          <span>👥 4–30 người</span>
+          <span>⭐ 4.8 (208)</span>
+        </div>
+        <div class="tour-footer">
+          <div>
+            <div class="tour-price-label">Từ</div>
+            <div class="tour-price">3.200.000 <sub>đ/người</sub></div>
+          </div>
+          <a href="#" class="btn-tour">Đặt ngay</a>
+        </div>
+      </div>
+    </div>
+    <div class="tour-card">
+      <div class="tour-img">
+        <img src="https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=600&q=80" alt="Đà Nẵng">
+        <span class="tour-badge">Ưu đãi</span>
+      </div>
+      <div class="tour-body">
+        <div class="tour-location">📍 Đà Nẵng · Hội An</div>
+        <div class="tour-name">Đà Nẵng — Hội An combo 5 ngày</div>
+        <div class="tour-details">
+          <span>📅 5N4Đ</span>
+          <span>👥 2–16 người</span>
+          <span>⭐ 4.7 (185)</span>
+        </div>
+        <div class="tour-footer">
+          <div>
+            <div class="tour-price-label">Từ</div>
+            <div class="tour-price">5.900.000 <sub>đ/người</sub></div>
+          </div>
+          <a href="#" class="btn-tour">Đặt ngay</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-banner" id="about">
+  <div class="section-header" style="margin-bottom: 0;">
+    <div class="section-eyebrow" style="color: var(--ocean-light);">Ưu đãi đặc biệt</div>
+    <h2 class="section-title" style="color: var(--white);">Đăng ký nhận <em>ưu đãi độc quyền</em></h2>
+    <p class="section-desc" style="color: rgba(253,252,249,0.72);">Nhận ngay voucher giảm 15% cho chuyến đi đầu tiên khi đăng ký nhận bản tin từ Travel Life.</p>
+    <div style="display: flex; gap: 1rem; justify-content: center; margin-top: 2rem; flex-wrap: wrap;">
+      <input type="email" placeholder="Email của bạn…" style="padding: 0.85rem 1.5rem; border-radius: 100px; border: none; font-family: var(--font-sans); font-size: 0.95rem; width: 300px; outline: none;">
+      <a href="dattourngay.html">Đăng ký ngay</a>
+    
+  </div>
+    </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials">
+  <div class="section-header">
+    <div class="section-eyebrow">Khách hàng nói gì</div>
+    <h2 class="section-title">Hành trình <em>đáng nhớ</em></h2>
+  </div>
+  <div class="testi-grid">
+    <div class="testi-card">
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-text">"Chuyến đi Phú Quốc vượt ngoài mọi kỳ vọng. Dịch vụ tận tâm, lịch trình hợp lý, biển đẹp đến mê hồn. Nhất định sẽ quay lại!"</p>
+      <div class="testi-author">
+        <img class="testi-avatar" src="https://i.pravatar.cc/80?img=47" alt="Nguyễn Thị Lan">
+        <div>
+          <div class="testi-name">Nguyễn Thị Lan</div>
+          <div class="testi-loc">Hà Nội · Tour Phú Quốc 4N3Đ</div>
+        </div>
+      </div>
+    </div>
+    <div class="testi-card">
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-text">"Du thuyền Hạ Long lúc nửa đêm, nhìn sao trời phản chiếu xuống vịnh — đó là khoảnh khắc tôi sẽ không bao giờ quên trong đời."</p>
+      <div class="testi-author">
+        <img class="testi-avatar" src="https://i.pravatar.cc/80?img=12" alt="Trần Minh Khoa">
+        <div>
+          <div class="testi-name">Trần Minh Khoa</div>
+          <div class="testi-loc">TP.HCM · Tour Hạ Long 2N1Đ</div>
+        </div>
+      </div>
+    </div>
+    <div class="testi-card">
+      <div class="testi-stars">★★★★☆</div>
+      <p class="testi-text">"Đặt tour Đà Nẵng–Hội An lần đầu mà mọi thứ suôn sẻ đến bất ngờ. Hướng dẫn viên rất nhiệt tình và hiểu biết sâu về văn hóa địa phương."</p>
+      <div class="testi-author">
+        <img class="testi-avatar" src="https://i.pravatar.cc/80?img=32" alt="Lê Thu Hương">
+        <div>
+          <div class="testi-name">Lê Thu Hương</div>
+          <div class="testi-loc">Đà Lạt · Tour Đà Nẵng 5N4Đ</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a class="nav-logo" href="#">Travel <span>Life</span></a>
+      <p>Chúng tôi đồng hành cùng bạn trên mỗi hành trình biển — từ lên kế hoạch đến khoảnh khắc đặt chân lên bãi cát.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Điểm đến</h4>
+      <ul>
+        <li><a href="#">Phú Quốc</a></li>
+        <li><a href="#">Hạ Long</a></li>
+        <li><a href="#">Đà Nẵng</a></li>
+        <li><a href="#">Nha Trang</a></li>
+        <li><a href="#">Mũi Né</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Dịch vụ</h4>
+      <ul>
+        <li><a href="#">Tour trọn gói</a></li>
+        <li><a href="#">Thuê xe</a></li>
+        <li><a href="#">Đặt khách sạn</a></li>
+        <li><a href="#">Visa tư vấn</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Hỗ trợ</h4>
+      <ul>
+        <li><a href="#">Liên hệ 24/7</a></li>
+        <li><a href="#">Chính sách hoàn tiền</a></li>
+        <li><a href="#">Câu hỏi thường gặp</a></li>
+        <li><a href="#">Blog du lịch</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© Travel Life. Bảo lưu mọi quyền.</span>
+    <span>Được làm với 🌊 Travel Life từ Việt Nam</span>
+  </div>
+</footer>
+
+</body>
+</html>

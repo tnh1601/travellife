@@ -1,0 +1,194 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background:#f5f7fa;
+    color:#333;
+}
+
+/* HEADER */
+header{
+    background:#006994;
+    color:white;
+    padding:18px 60px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+}
+
+.logo span{
+    color:#f5c518;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#f5c518;
+}
+
+/* BANNER */
+.banner{
+    height:500px;
+    background:url("https://th.bing.com/th/id/R.43ea9abe069ac2c6dd7a37fef954f73d?rik=XhNffHeUNZbK7w&riu=http%3a%2f%2fpvhttnt.vn%2fwp-content%2fuploads%2f2022%2f11%2f12.jpg&ehk=hV%2blWHOv%2bnl3Zt0ZQ51pPLxDMB9EYk1YSmCamSG4Euo%3d&risl=&pid=ImgRaw&r=0") center/cover;
+    position:relative;
+}
+
+.banner::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.45);
+}
+
+.banner-content{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    text-align:center;
+    color:white;
+    z-index:2;
+}
+
+.banner-content h1{
+    font-size:52px;
+    margin-bottom:15px;
+}
+
+.banner-content p{
+    font-size:18px;
+    margin-bottom:25px;
+}
+
+.btn-book{
+    background:#f5c518;
+    color:#222;
+    padding:14px 35px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.btn-book:hover{
+    background:#e3b000;
+}
+
+/* TOUR INFO */
+.container{
+    width:1200px;
+    margin:40px auto;
+}
+
+.info-box{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+    margin-bottom:25px;
+}
+
+.info-box h2{
+    color:#006994;
+    margin-bottom:20px;
+}
+
+.info-box p{
+    line-height:1.8;
+}
+
+.schedule{
+    list-style:none;
+}
+
+.schedule li{
+    padding:15px;
+    border-left:4px solid #006994;
+    background:#f8fbfd;
+    margin-bottom:15px;
+    border-radius:6px;
+}
+
+/* PRICE */
+.price-box{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.price{
+    font-size:42px;
+    color:#006994;
+    font-weight:bold;
+    margin:15px 0;
+}
+
+.discount{
+    background:#fff0cc;
+    color:#cc8800;
+    padding:5px 15px;
+    border-radius:20px;
+    display:inline-block;
+}
+
+.book-btn{
+    display:inline-block;
+    margin-top:20px;
+    background:#006994;
+    color:white;
+    text-decoration:none;
+    padding:15px 40px;
+    border-radius:8px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.book-btn:hover{
+    background:#004f6d;
+}
+
+/* GALLERY */
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:15px;
+    margin-top:20px;
+}
+
+.gallery img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+    border-radius:12px;
+    transition:0.3s;
+    cursor:pointer;
+}
+
+.gallery img:hover{
+    transform:scale(1.05);
+}
+
+/* FOOTER */
+footer{
+    background:#111;
+    color:#aaa;
+    text-align:center;
+    padding:25px;
+    margin-top:50px;
+}

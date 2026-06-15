@@ -1,0 +1,97 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    height:100vh;
+
+    background:
+    linear-gradient(
+        rgba(0,0,0,.4),
+        rgba(0,0,0,.4)
+    ),
+    url(pcanh.jpg);
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+input {
+    margin-left:10px;
+}
+
+
+.login-card{
+
+    width:420px;
+
+    backdrop-filter:blur(15px);
+
+    background:#84a8b7;
+
+    border:1px solid rgba(192, 223, 232, 0.618);
+
+    border-radius:25px;
+
+    padding:40px;
+
+    color:white;
+}
+
+.login-card h1{
+    text-align:center;
+    font-weight:700;
+}
+
+.subtitle{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.input-box{
+
+    background:
+    rgba(181, 198, 234, 0.371);
+
+    border-radius:12px;
+
+    margin-bottom:15px;
+
+    display:flex;
+    align-items:center;
+
+    padding:12px;
+}
+
+.input-box input{
+
+    width:100%;
+    border:none;
+    background:none;
+    outline:none;
+    color:white;
+}
+
+.btn-login{
+    display:block;
+    width:100%;
+
+    padding:14px;
+
+    border-radius:12px;
+
+    background:#fbbf24;
+
+    font-weight:bold;
+
+    text-align:center;
+    text-decoration:none;
+    color:black;
+}
