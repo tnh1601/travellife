@@ -9,7 +9,7 @@ html {
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  color: #173044;
+  color: #5e98c8;
   background: #f7fbfb;
 }
 
@@ -41,7 +41,7 @@ a {
   flex: 0 0 auto;
   font-size: 23px;
   font-weight: 800;
-  color: #006b6f;
+  color: #3b09ed;
   letter-spacing: 0;
 }
 
@@ -63,7 +63,7 @@ a {
 .main-nav a {
   font-weight: 700;
   font-size: 14px;
-  color: #284b5c;
+  color: #6c99d0;
 }
 
 .main-nav a:hover {
@@ -79,7 +79,7 @@ a {
 .hotline {
   white-space: nowrap;
   font-weight: 800;
-  color: #bc7a16;
+  color: #26aee9;
 }
 
 .language {
@@ -111,7 +111,7 @@ a {
   align-items: end;
   padding: 150px 48px 46px;
   background:
-    linear-gradient(90deg, rgba(5, 43, 58, 0.8), rgba(5, 43, 58, 0.22)),
+    linear-gradient(90deg, rgba(118, 7, 146, 0.8), rgba(5, 43, 58, 0.22)),
     url("https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1800&q=85") center/cover;
 }
 
@@ -123,7 +123,7 @@ a {
 
 .eyebrow {
   margin: 0 0 10px;
-  color: #c58b2a;
+  color: #56c52a;
   font-weight: 900;
   text-transform: uppercase;
   font-size: 13px;
@@ -131,7 +131,7 @@ a {
 }
 
 .hero-content .eyebrow {
-  color: #ffe4a6;
+  color: #a6fff9;
 }
 
 .hero h1 {
