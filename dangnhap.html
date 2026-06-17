@@ -26,22 +26,31 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
             Chào mừng bạn quay trở lại
         </p>
 
-        <div class="input-box">
-            <i class="fa-solid fa-envelope"></i>
+        <form id="formDangNhap" onsubmit="dangNhap(event)">
 
-            <input type="email"
-                   placeholder="Email">
-        </div>
+            <div class="input-box">
+                <i class="fa-solid fa-envelope"></i>
 
-        <div class="input-box">
-            <i class="fa-solid fa-lock"></i>
+                <input type="email"
+                       id="loginEmail"
+                       placeholder="Email"
+                       required>
+            </div>
 
-            <input type="password"
-                   placeholder="Mật khẩu">
-        </div>
-<a href="./tkewedbuoi9.html" class="btn-login">
-    Đăng nhập
-</a>
+            <div class="input-box">
+                <i class="fa-solid fa-lock"></i>
+
+                <input type="password"
+                       id="loginPassword"
+                       placeholder="Mật khẩu"
+                       required>
+            </div>
+
+            <button type="submit" class="btn-login">
+                Đăng nhập
+            </button>
+
+        </form>
 
         <div class="social">
 
@@ -68,6 +77,32 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     </div>
 
 </div>
+
+<script>
+function dangNhap(event) {
+  event.preventDefault();
+
+  const email = document.getElementById("loginEmail").value.trim();
+  const password = document.getElementById("loginPassword").value;
+
+  const userData = localStorage.getItem("user");
+
+  if (!userData) {
+    alert("Chưa có tài khoản nào được đăng ký. Vui lòng đăng ký trước!");
+    return;
+  }
+
+  const user = JSON.parse(userData);
+
+  if (user.email === email && user.password === password) {
+    localStorage.setItem("isLoggedIn", "true");
+    alert("Đăng nhập thành công!");
+    window.location.href = "tkewedbuoi9.html";
+  } else {
+    alert("Email hoặc mật khẩu không đúng!");
+  }
+}
+</script>
 
 </body>
 </html>
