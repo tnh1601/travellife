@@ -18,6 +18,47 @@ btn.addEventListener("click", function () {
     menu.classList.toggle("show");
 });
 
+// ===== KIỂM TRA TRẠNG THÁI ĐĂNG NHẬP =====
+function capNhatTrangThaiDangNhap() {
+  const accountBtnText = document.getElementById("accountBtnText");
+  const isLoggedIn = localStorage.getItem("isLoggedIn") === "true";
+  const userData = localStorage.getItem("user");
+
+  if (isLoggedIn && userData) {
+    const user = JSON.parse(userData);
+
+    accountBtnText.textContent = "Xin chào, " + user.name + " ▼";
+
+    menu.innerHTML = `
+      <a href="#" style="font-weight:bold; color:#006994;">👤 ${user.name}</a>
+      <a href="#" style="font-size:12px; color:#888;">${user.email}</a>
+      <a href="#" id="logoutLink">Đăng xuất</a>
+    `;
+
+    document.getElementById("logoutLink").addEventListener("click", function (e) {
+      e.preventDefault();
+      dangXuat();
+    });
+
+  } else {
+    accountBtnText.textContent = "Tài khoản ▼";
+
+    menu.innerHTML = `
+      <a href="dangnhap.html">Đăng nhập</a>
+      <a href="dangki.html">Đăng ký</a>
+    `;
+  }
+}
+
+function dangXuat() {
+  localStorage.removeItem("isLoggedIn");
+  alert("Bạn đã đăng xuất!");
+  capNhatTrangThaiDangNhap();
+  menu.classList.remove("show");
+}
+
+capNhatTrangThaiDangNhap();
+
 
 
 var arr_image = [
