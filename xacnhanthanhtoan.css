@@ -20,7 +20,7 @@ body{
     background:
     linear-gradient(rgba(0,0,0,.35),
     rgba(0,0,0,.35)),
-    url("images/danang.jpg");
+    url("https://static.vinwonders.com/2022/06/du-lich-da-nang-thang-11-anh-thumb.jpg");
 
     background-size:cover;
     background-position:center;
@@ -29,7 +29,7 @@ body{
     color:white;
 }
 
-.btn-back{
+.back-link{
     margin:30px;
     border:none;
     padding:12px 24px;
