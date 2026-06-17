@@ -1,4 +1,4 @@
-  *{ 
+*{ 
   margin: 0; padding: 0; box-sizing: border-box;
  }
 
@@ -825,5 +825,3 @@
 .account-dropdown a:hover{
     background: #f5f5f5;
 }
-
-   
